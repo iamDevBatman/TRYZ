@@ -1,95 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Home-TRIZZ</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="site-header">
-        <div class="header-container">
-            <!-- Logo -->
-            <a href="/" class="logo">
-                <img src="./img/Logo TRYZ.png" alt="Nome da Empresa">
-            </a>
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="/" class="logo">
+          <img src="./img/Logo TRYZ.png" alt="Nome da Empresa" />
+        </a>
 
-            <!-- Barra de Busca -->
-            <form action="/busca" method="get" role="search">
-                <div class="search-container">
-                    <img src="./img/search.png" alt="" aria-hidden="true" class="search-icon">
+        <!-- Barra de Busca -->
+        <form action="/busca" method="get" role="search">
+          <div class="search-container">
+            <img
+              src="./img/search.png"
+              alt=""
+              aria-hidden="true"
+              class="search-icon"
+            />
 
-                    <input type="search" placeholder="Search for categories,tags..." aria-label="Buscar no site"
-                        class="search-input">
-                </div>
+            <input
+              type="search"
+              placeholder="Search for categories,tags..."
+              aria-label="Buscar no site"
+              class="search-input"
+            />
+          </div>
+        </form>
 
-            </form>
+        <!-- Menu de Navegação -->
+        <nav aria-label="Navegação principal">
+          <ul class="menu">
+            <li>
+              <a href="/">
+                Adicionar meu evento
+                <img src="./img/Group.png" alt="" class="menu-icon" />
+              </a>
+            </li>
 
-            <!-- Menu de Navegação -->
-            <nav aria-label="Navegação principal">
-                <ul class="menu">
-                    <li>
-                        <a href="/">
-                            Adicionar meu evento
-                            <img src="./img/Group.png" alt="" class="menu-icon">
-                        </a>
-                    </li>
+            <li>
+              <a href="/sobre">
+                Meus ingressos
+                <img src="./img/Group 13991.png" alt="" class="menu-icon" />
+              </a>
+            </li>
 
-                    <li>
-                        <a href="/sobre">
-                            Meus ingressos
-                            <img src="./img/Group 13991.png" alt="" class="menu-icon">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/contato">
-                            Sobre a TRYZ
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
-
-        </div>
+            <li>
+              <a href="/contato"> Sobre a TRYZ </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="container">
-        <img src="./img/Tryz Black.png" alt="Tryz Black" class="black-icon">
+      <img src="./img/Tryz Black.png" alt="Tryz Black" class="black-icon" />
 
-        <div class="div-textao">
-            <h1 class="textao"> TODA DIVERÇÃO <br> COMEÇA AQUI!</h1>
-        </div>
+      <div class="div-textao">
+        <h1 class="textao">
+          TODA DIVERÇÃO <br />
+          COMEÇA AQUI!
+        </h1>
+      </div>
 
+      <div class="espaçamento">
+        <p class="frase-esp">seu proximo evento esta aqui!</p>
         <div class="card-P">
-            <div></div>
-            <ul class="card-list">
-                <li class="card-item">
-                    
-                    <a href="#" class="card-link">                      
-                            <p class="card-titulo">FESTA LOREMISUM</p>
-                        
-                            <h2 class="info-card">Parque Lorem - SP, Br <br> 30 de Novembro 2024</h2>
-                        <div class="botao">
-                            <button class="botao1">Info</button>
-                            <button class="botao2">Tickets</button>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+          <div></div>
+          <ul class="card-list">
+            <li class="card-item">
+              <a href="#" class="card-link">
+                <p class="card-titulo">FESTA LOREMISUM</p>
+
+                <h2 class="info-card">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <button class="botao1">Info</button>
+                  <button class="botao2">Tickets</button>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
