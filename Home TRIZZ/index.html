@@ -1,108 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <title>Home-TRIZZ</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="site-header">
-      <div class="header-container">
-        <!-- Logo -->
-        <a href="/" class="logo">
-          <img src="./img/Logo TRYZ.png" alt="Nome da Empresa" />
-        </a>
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="/" class="logo">
+                <img src="./img/Logo TRYZ.png" alt="Nome da Empresa" />
+            </a>
 
-        <!-- Barra de Busca -->
-        <form action="/busca" method="get" role="search">
-          <div class="search-container">
-            <img
-              src="./img/search.png"
-              alt=""
-              aria-hidden="true"
-              class="search-icon"
-            />
+            <!-- Barra de Busca -->
+            <form action="/busca" method="get" role="search">
+                <div class="search-container">
+                    <img src="./img/search.png" alt="" aria-hidden="true" class="search-icon" />
 
-            <input
-              type="search"
-              placeholder="Search for categories,tags..."
-              aria-label="Buscar no site"
-              class="search-input"
-            />
-          </div>
-        </form>
+                    <input type="search" placeholder="Search for categories,tags..." aria-label="Buscar no site"
+                        class="search-input" />
+                </div>
+            </form>
 
-        <!-- Menu de Navegação -->
-        <nav aria-label="Navegação principal">
-          <ul class="menu">
-            <li>
-              <a href="/">
-                Adicionar meu evento
-                <img src="./img/Group.png" alt="" class="menu-icon" />
-              </a>
-            </li>
+            <!-- Menu de Navegação -->
+            <nav aria-label="Navegação principal">
+                <ul class="menu">
+                    <li>
+                        <a href="/">
+                            Adicionar meu evento
+                            <img src="./img/Group.png" alt="" class="menu-icon" />
+                        </a>
+                    </li>
 
-            <li>
-              <a href="/sobre">
-                Meus ingressos
-                <img src="./img/Group 13991.png" alt="" class="menu-icon" />
-              </a>
-            </li>
+                    <li>
+                        <a href="/sobre">
+                            Meus ingressos
+                            <img src="./img/Group 13991.png" alt="" class="menu-icon" />
+                        </a>
+                    </li>
 
-            <li>
-              <a href="/contato"> Sobre a TRYZ </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+                    <li>
+                        <a href="/contato"> Sobre a TRYZ </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <div class="container">
-      <img src="./img/Tryz Black.png" alt="Tryz Black" class="black-icon" />
+        <img src="./img/Tryz Black.png" alt="Tryz Black" class="black-icon" />
 
-      <div class="div-textao">
-        <h1 class="textao">
-          TODA DIVERÇÃO <br />
-          COMEÇA AQUI!
-        </h1>
-      </div>
-
-      <div class="espaçamento">
-        <p class="frase-esp">seu proximo evento esta aqui!</p>
-        <div class="card-P">
-          <div></div>
-          <ul class="card-list">
-            <li class="card-item">
-              <a href="#" class="card-link">
-                <p class="card-titulo">FESTA LOREMISUM</p>
-
-                <h2 class="info-card">
-                  Parque Lorem - SP, Br <br />
-                  30 de Novembro 2024
-                </h2>
-                <div class="botao">
-                  <button class="botao1">Info</button>
-                  <button class="botao2">Tickets</button>
-                </div>
-              </a>
-            </li>
-          </ul>
+        <div class="div-textao">
+            <h1 class="textao">
+                TODA DIVERÇÃO <br />
+                COMEÇA AQUI!
+            </h1>
         </div>
-      </div>
+
+        <div class="espaçamento">
+            <p class="frase-esp">seu proximo evento esta aqui!</p>
+
+            <div class="card-P">
+                <div></div>
+                <ul class="card-list">
+                    <li class="card-item" draggable="false">
+                        <a href="#" class="card-link">
+
+                            <p class="card-titulo">FESTA LOREMISUM</p>
+
+                            <h2 class="info-card">
+                                Parque Lorem - SP, Br <br />
+                                30 de Novembro 2024
+                            </h2>
+                            <div class="botao">
+                                <button class="botao1">Info</button>
+                                <button class="botao2">Tickets</button>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-item" draggable="false">
+                        <a href="#" class="card-link">
+
+                            <p class="card-titulo">FESTA LOREMISUM</p>
+
+                            <h2 class="info-card">
+                                Parque Lorem - SP, Br <br />
+                                30 de Novembro 2024
+                            </h2>
+                            <div class="botao">
+                                <button class="botao1">Info</button>
+                                <button class="botao2">Tickets</button>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-item" draggable="false">
+                        <a href="#" class="card-link">
+
+                            <p class="card-titulo">FESTA LOREMISUM</p>
+
+                            <h2 class="info-card">
+                                Parque Lorem - SP, Br <br />
+                                30 de Novembro 2024
+                            </h2>
+                            <div class="botao">
+                                <button class="botao1">Info</button>
+                                <button class="botao2">Tickets</button>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-item" draggable="false">
+                        <a href="#" class="card-link">
+
+                            <p class="card-titulo">FESTA LOREMISUM</p>
+
+                            <h2 class="info-card">
+                                Parque Lorem - SP, Br <br />
+                                30 de Novembro 2024
+                            </h2>
+                            <div class="botao">
+                                <button class="botao1">Info</button>
+                                <button class="botao2">Tickets</button>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-item" draggable="false">
+                        <a href="#" class="card-link">
+
+                            <p class="card-titulo">FESTA LOREMISUM</p>
+
+                            <h2 class="info-card">
+                                Parque Lorem - SP, Br <br />
+                                30 de Novembro 2024
+                            </h2>
+                            <div class="botao">
+                                <button class="botao1">Info</button>
+                                <button class="botao2">Tickets</button>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="espaçamento-2">
+            <p class="frase-esp2">Encontre seu <br> <span>proximo evento</span> </p>
+
+            <div class="input-container">
+                <div class="search-container1">
+                    <img src="./img/search.png" alt="" aria-hidden="true" class="search-icon1" />
+
+                    <input type="search" placeholder="Buscar por nome do evento" aria-label="Buscar no site"
+                        class="search-input1" />
+                </div>
+
+                <div class="search-container1">
+                    <input list="frutas" placeholder="Selecione a Opção" aria-label="Buscar no site"
+                        class="search-input1" />
+
+                        <img src="./img/down.png" class="seta-down">
+
+                </div>
+
+                <div class="search-container1">
+                    <input list="frutas" placeholder="Selecione a Opção" aria-label="Buscar no site"
+                        class="search-input1" />
+
+                        <img src="./img/down.png" class="seta-down">
+
+                    <datalist id="frutas">
+                        <option value="Maçã">
+                        <option value="Banana">
+                        <option value="Laranja">
+                        <option value="Morango">
+                    </datalist>
+                </div>
+
+                <input type="image" src="./img/Icone Procura.png" alt="Enviar" class="img-lupa">
+            </div>
+
+            <div class="letrero">
+                <img src="./img/festa eletronica.png" alt="img-letrero">
+
+                <img src="./img/star.png" alt="img-star" class="star">
+
+                <img src="./img/musica.png" alt="img-letrero">
+
+                <img src="./img/star.png" alt="img-star" class="star">
+
+
+                <img src="./img/festa eletronica.png" alt="img-letrero">
+
+                <img src="./img/star.png" alt="img-star" class="star">
+
+                <img src="./img/musica.png" alt="img-letrero">
+
+                <img src="./img/star.png" alt="img-star" class="star">
+            </div>
+        </div>
     </div>
-  </body>
+
+
+</body>
+
 </html>
