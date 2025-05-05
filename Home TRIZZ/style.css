@@ -6,6 +6,7 @@
 body {
   background-color: black;
   position: relative;
+  scrollbar-width: none;
 }
 
 .logo {
@@ -73,7 +74,9 @@ a {
 }
 
 .search-input {
-  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 106px;
   border: none;
   font-size: 16px;
   padding: 8px 0;
@@ -183,14 +186,76 @@ a {
   position: relative;
 }
 
+.card-img {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 269px;
+  height: 484px;
+  border-radius: 16px;
+  border: rgba(42, 37, 51, 1) , solid;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("./img/Design\ sem\ nome.png") center/cover;
+  position: relative;
+}
+
+.card-img2 {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 269px;
+  height: 484px;
+  border-radius: 16px;
+  border: rgba(42, 37, 51, 1) , solid;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("./img/alok.jpg") center/cover;
+  position: relative;
+}
+
+.card-img3 {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 269px;
+  height: 484px;
+  border-radius: 16px;
+  border: rgba(42, 37, 51, 1) , solid;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("./img/fest\ verde.jpg") center/cover;
+  position: relative;
+}
+
+.card-img4 {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 269px;
+  height: 484px;
+  border-radius: 16px;
+  border: rgba(42, 37, 51, 1) , solid;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("./img/card\ fest.png") center/cover;
+  position: relative;
+}
+
 .card-link {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: 190px;
+  gap: 15px;
+  margin-top: 212px;
   height: 200px;
   padding: 20px;
   background: linear-gradient(to top, #fff 0%, transparent 100%);
+  border-radius: 0 0 16px 16px;
+  text-decoration: none;
+}
+
+.card-link2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 243px;
+  height: 200px;
+  padding: 20px;
+  background: linear-gradient(to top, #000 0%, transparent 110%);
   border-radius: 0 0 16px 16px;
   text-decoration: none;
 }
@@ -200,6 +265,21 @@ a {
 }
 
 .card-list {
+  display: flex;
+  margin-left: 70px;
+  gap: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.card-list2::-webkit-scrollbar {
+  display: none;
+}
+
+.card-list2 {
+  display: flex;
+  margin-left: 450px;
+  gap: 50px;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -214,14 +294,35 @@ a {
   padding: 0 15px;
 }
 
+.card-titulo2 {
+  display: flex;
+  align-items: center;
+  width: 193px;
+  height: 29px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  background-color: #000;
+  color: #fff;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+
 .info-card {
   font-size: 16.8px;
   color: #000;
   padding: 0 15px;
 }
 
+.info-card2 {
+  font-size: 16.8px;
+  color: #fff;
+  padding: 0 15px;
+}
+
 .botao {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 0 15px 15px;
   gap: 10px;
@@ -282,12 +383,12 @@ a {
 }
 
 .search-container1 {
-  max-width: 350px;
-  max-height: 48px;
+  width: 146px;
+  height: 36px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  background: black;
+  justify-content: space-around;
+  background: rgba(31, 27, 38, 1);
   border: 0.5px solid gray;
   border-radius: 20px;
   overflow: hidden;
@@ -299,6 +400,7 @@ a {
 }
 
 .search-input1 {
+  width: 155px;
   flex: 1;
   margin-left: 15px;
   border: none;
@@ -336,6 +438,51 @@ a {
   width: 46px;
   height: 46px;
 }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seleçao {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  gap: 450px;
+}
+
+.musica {
+  color: #fff;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+
+.setas {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.categorias {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  gap: 200px;
+  height: 4000px;
+}
+
+.img-arrow {
+  max-width: 36px;
+  min-width: 36px;
+}
+
 
 @keyframes scrollInfinito {
   to {
