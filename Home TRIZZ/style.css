@@ -7,6 +7,8 @@ body {
   background-color: black;
   position: relative;
   scrollbar-width: none;
+  max-width: 100%;
+  /* overflow-x: hidden;  */
 }
 
 .logo {
@@ -25,9 +27,17 @@ body {
   background-size: cover;
 }
 
+.sobre-tryz a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   list-style: none;
 }
@@ -58,30 +68,34 @@ a {
 }
 
 .search-container {
-  max-width: 600px;
-  margin-right: 40px;
+  width: 258px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background: black;
-  border: 0.5px solid gray;
+  border: 0.5px solid rgba(42, 37, 51, 0.31);
   border-radius: 20px;
   overflow: hidden;
 }
 
 .search-icon {
-  margin-right: 12px;
   color: #767676;
+  border-radius: 50%;
 }
 
 .search-input {
   display: flex;
   align-items: center;
-  width: 106px;
+  margin-right: 12px;
+  width: 191px;
   border: none;
   font-size: 16px;
   padding: 8px 0;
   outline: none;
   background-color: black;
+}
+
+.nav {
+  margin-left: 10px;
 }
 
 .container {
@@ -121,7 +135,7 @@ a {
   justify-content: center;
   width: 100%;
   height: 496px;
-  margin-top: 300px;
+  margin-top: 600px;
 }
 
 .espaçamento {
@@ -192,7 +206,7 @@ a {
   width: 269px;
   height: 484px;
   border-radius: 16px;
-  border: rgba(42, 37, 51, 1) , solid;
+  border: rgba(42, 37, 51, 1), solid;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("./img/Design\ sem\ nome.png") center/cover;
   position: relative;
@@ -204,7 +218,7 @@ a {
   width: 269px;
   height: 484px;
   border-radius: 16px;
-  border: rgba(42, 37, 51, 1) , solid;
+  border: rgba(42, 37, 51, 1), solid;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("./img/alok.jpg") center/cover;
   position: relative;
@@ -216,7 +230,7 @@ a {
   width: 269px;
   height: 484px;
   border-radius: 16px;
-  border: rgba(42, 37, 51, 1) , solid;
+  border: rgba(42, 37, 51, 1), solid;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("./img/fest\ verde.jpg") center/cover;
   position: relative;
@@ -228,7 +242,7 @@ a {
   width: 269px;
   height: 484px;
   border-radius: 16px;
-  border: rgba(42, 37, 51, 1) , solid;
+  border: rgba(42, 37, 51, 1), solid;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("./img/card\ fest.png") center/cover;
   position: relative;
@@ -483,6 +497,89 @@ a {
   min-width: 36px;
 }
 
+.espaçamento-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1125px;
+  gap: 20px;
+  width: 100%;
+  background-color: #000;
+}
+
+.p-1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.p-2 {
+  font-family: Anton;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.p-3 {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.p-4 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -4%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.p-5 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.espaçamento-4 {
+  display: flex;
+  flex-direction: row;
+  height: 776px;
+  width: 100%;
+  background-color: #000;
+}
+
+.informaçao {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.botões {
+  display: flex;
+  flex-direction: row;
+}
+
+.imagem-dissolvida {
+  
+}
 
 @keyframes scrollInfinito {
   to {
