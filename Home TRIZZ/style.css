@@ -8,7 +8,7 @@ body {
   position: relative;
   scrollbar-width: none;
   max-width: 100%;
-  /* overflow-x: hidden;  */
+  overflow-x: hidden !important;
 }
 
 .logo {
@@ -147,10 +147,12 @@ a {
   gap: 15px;
   width: 100%;
   height: 1100px;
-  background: linear-gradient(to bottom,
-      transparent 0%,
-      #1f1b26 50%,
-      black 100%);
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #1f1b26 50%,
+    black 100%
+  );
 }
 
 .frase-esp {
@@ -559,6 +561,8 @@ a {
 
 .espaçamento-4 {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   height: 776px;
   width: 100%;
@@ -574,11 +578,11 @@ a {
 
 .botões {
   display: flex;
+  gap: 10px;
   flex-direction: row;
 }
 
 .imagem-dissolvida {
-  
 }
 
 @keyframes scrollInfinito {

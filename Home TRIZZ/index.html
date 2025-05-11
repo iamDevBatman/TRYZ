@@ -1,834 +1,913 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
     <title>Home-TRYZ</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="site-header">
-        <div class="header-container">
-            <!-- Logo -->
-            <a href="/" class="logo">
-                <img src="./img/Logo TRYZ.png" alt="Nome da Empresa" />
-            </a>
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="/" class="logo">
+          <img src="./img/Logo TRYZ.png" alt="Nome da Empresa" />
+        </a>
 
-            <!-- Barra de Busca -->
-            <form action="/busca" method="get" role="search">
-                <div class="search-container">
-                    <img src="./img/search.png" alt="" aria-hidden="true" class="search-icon" />
+        <!-- Barra de Busca -->
+        <form action="/busca" method="get" role="search">
+          <div class="search-container">
+            <img
+              src="./img/search.png"
+              alt=""
+              aria-hidden="true"
+              class="search-icon"
+            />
 
-                    <input type="search" placeholder="Search for categories,tags..." aria-label="Buscar no site"
-                        class="search-input" />
-                </div>
-            </form>
+            <input
+              type="search"
+              placeholder="Search for categories,tags..."
+              aria-label="Buscar no site"
+              class="search-input"
+            />
+          </div>
+        </form>
 
-            <!-- Menu de Navegação -->
-            <nav aria-label="Navegação principal" class="nav">
-                <ul class="menu">
-                    <li>
-                        <a href="/">
-                            Adicionar meu evento
-                            <img src="./img/Group.png" alt="" class="menu-icon" />
-                        </a>
-                    </li>
+        <!-- Menu de Navegação -->
+        <nav aria-label="Navegação principal" class="nav">
+          <ul class="menu">
+            <li>
+              <a href="/">
+                Adicionar meu evento
+                <img src="./img/Group.png" alt="" class="menu-icon" />
+              </a>
+            </li>
 
-                    <li>
-                        <a href="/sobre">
-                            Meus ingressos
-                            <img src="./img/Group 13991.png" alt="" class="menu-icon" />
-                        </a>
-                    </li>
+            <li>
+              <a href="/sobre">
+                Meus ingressos
+                <img src="./img/Group 13991.png" alt="" class="menu-icon" />
+              </a>
+            </li>
 
-                    <li class="sobre-tryz">
-                        <a href="/contato">
-                            Sobre a TRYZ
-                            <img src="./img/down.png" alt="down" class="down">
-                        </a>
-                    </li>
+            <li class="sobre-tryz">
+              <a href="/contato">
+                Sobre a TRYZ
+                <img src="./img/down.png" alt="down" class="down" />
+              </a>
+            </li>
 
-                    <li>
-                        <a href="/">
-                            <img src="./img/vector2.png" alt="" class="" />
-                        </a>
-                    </li>
+            <li>
+              <a href="/">
+                <img src="./img/vector2.png" alt="" class="" />
+              </a>
+            </li>
 
-                    <li>
-                        <a href="/">
-                            <img src="./img/users.png" alt="user">
-                            <img src="./img/down.png" alt="" class="" />
-                        </a>
-                    </li>
+            <li>
+              <a href="/">
+                <img src="./img/users.png" alt="user" />
+                <img src="./img/down.png" alt="" class="" />
+              </a>
+            </li>
 
-                    <li>
-                        <a href="/">
-                            <img src="./img/Vector3.png" alt="nacionalidade">
-                            <img src="./img/down.png" alt="" class="" />
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            <li>
+              <a href="/">
+                <img src="./img/Vector3.png" alt="nacionalidade" />
+                <img src="./img/down.png" alt="" class="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="container">
-        <img src="./img/Tryz Black.png" alt="Tryz Black" class="black-icon" />
+      <img src="./img/Tryz Black.png" alt="Tryz Black" class="black-icon" />
 
-        <div class="div-textao">
-            <h1 class="textao">
-                TODA DIVERÇÃO <br />
-                COMEÇA AQUI!
-            </h1>
+      <div class="div-textao">
+        <h1 class="textao">
+          TODA DIVERÇÃO <br />
+          COMEÇA AQUI!
+        </h1>
+      </div>
+
+      <div class="espaçamento">
+        <p class="frase-esp">seu proximo evento esta aqui!</p>
+
+        <div class="card-P">
+          <div></div>
+          <ul class="card-list">
+            <li class="card-item" draggable="false">
+              <a href="#" class="card-link">
+                <p class="card-titulo">FESTA LOREMISUM</p>
+
+                <h2 class="info-card">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <button class="botao1">Info</button>
+                  <button class="botao2">Tickets</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-item" draggable="false">
+              <a href="#" class="card-link">
+                <p class="card-titulo">FESTA LOREMISUM</p>
+
+                <h2 class="info-card">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <button class="botao1">Info</button>
+                  <button class="botao2">Tickets</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-item" draggable="false">
+              <a href="#" class="card-link">
+                <p class="card-titulo">FESTA LOREMISUM</p>
+
+                <h2 class="info-card">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <button class="botao1">Info</button>
+                  <button class="botao2">Tickets</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-item" draggable="false">
+              <a href="#" class="card-link">
+                <p class="card-titulo">FESTA LOREMISUM</p>
+
+                <h2 class="info-card">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <button class="botao1">Info</button>
+                  <button class="botao2">Tickets</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-item" draggable="false">
+              <a href="#" class="card-link">
+                <p class="card-titulo">FESTA LOREMISUM</p>
+
+                <h2 class="info-card">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <button class="botao1">Info</button>
+                  <button class="botao2">Tickets</button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="espaçamento-2">
+        <p class="frase-esp2">
+          Encontre seu <br />
+          <span>proximo evento</span>
+        </p>
+
+        <div class="input-container">
+          <div class="search-container">
+            <img
+              src="./img/search.png"
+              alt=""
+              aria-hidden="true"
+              class="search-icon1"
+            />
+
+            <input
+              type="search"
+              placeholder="Buscar por nome do evento"
+              aria-label="Buscar no site"
+              class="search-input1"
+            />
+          </div>
+
+          <div class="search-container">
+            <input
+              list="frutas"
+              placeholder="Selecione a Opção"
+              aria-label="Buscar no site"
+              class="search-input1"
+            />
+
+            <img src="./img/down.png" class="seta-down" />
+          </div>
+
+          <div class="search-container">
+            <input
+              list="frutas"
+              placeholder="Selecione a Opção"
+              aria-label="Buscar no site"
+              class="search-input1"
+            />
+
+            <img src="./img/down.png" class="seta-down" />
+
+            <datalist id="frutas">
+              <option value="Maçã"></option>
+              <option value="Banana"></option>
+              <option value="Laranja"></option>
+              <option value="Morango"></option>
+            </datalist>
+          </div>
+
+          <input
+            type="image"
+            src="./img/Icone Procura.png"
+            alt="Enviar"
+            class="img-lupa"
+          />
         </div>
 
-        <div class="espaçamento">
-            <p class="frase-esp">seu proximo evento esta aqui!</p>
+        <div class="letrero">
+          <img src="./img/festa eletronica.png" alt="img-letrero" />
 
-            <div class="card-P">
-                <div></div>
-                <ul class="card-list">
-                    <li class="card-item" draggable="false">
-                        <a href="#" class="card-link">
+          <img src="./img/star.png" alt="img-star" class="star" />
 
-                            <p class="card-titulo">FESTA LOREMISUM</p>
+          <img src="./img/musica.png" alt="img-letrero" />
 
-                            <h2 class="info-card">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <button class="botao1">Info</button>
-                                <button class="botao2">Tickets</button>
-                            </div>
-                        </a>
-                    </li>
+          <img src="./img/star.png" alt="img-star" class="star" />
 
-                    <li class="card-item" draggable="false">
-                        <a href="#" class="card-link">
+          <img src="./img/festa eletronica.png" alt="img-letrero" />
 
-                            <p class="card-titulo">FESTA LOREMISUM</p>
+          <img src="./img/star.png" alt="img-star" class="star" />
 
-                            <h2 class="info-card">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <button class="botao1">Info</button>
-                                <button class="botao2">Tickets</button>
-                            </div>
-                        </a>
-                    </li>
+          <img src="./img/musica.png" alt="img-letrero" />
 
-                    <li class="card-item" draggable="false">
-                        <a href="#" class="card-link">
+          <img src="./img/star.png" alt="img-star" class="star" />
+        </div>
+      </div>
+      <main class="categorias">
+        <div class="text">
+          <div class="seleçao">
+            <p class="musica">Musica eletronica</p>
 
-                            <p class="card-titulo">FESTA LOREMISUM</p>
+            <div class="setas">
+              <div>
+                <input
+                  type="image"
+                  src="./img/seta left.png"
+                  alt="Enviar"
+                  class="img-arrow"
+                />
 
-                            <h2 class="info-card">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <button class="botao1">Info</button>
-                                <button class="botao2">Tickets</button>
-                            </div>
-                        </a>
-                    </li>
+                <input
+                  type="image"
+                  src="./img/seta right.png"
+                  alt="Enviar"
+                  class="img-arrow"
+                />
 
-                    <li class="card-item" draggable="false">
-                        <a href="#" class="card-link">
+                <input
+                  type="image"
+                  src="./img/Botão Ver todos.png"
+                  alt="Enviar"
+                  class="ver-todos"
+                />
+              </div>
 
-                            <p class="card-titulo">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <button class="botao1">Info</button>
-                                <button class="botao2">Tickets</button>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-item" draggable="false">
-                        <a href="#" class="card-link">
-
-                            <p class="card-titulo">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <button class="botao1">Info</button>
-                                <button class="botao2">Tickets</button>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+              <datalist id="frutas">
+                <option value="Maçã"></option>
+                <option value="Banana"></option>
+                <option value="Laranja"></option>
+                <option value="Morango"></option>
+              </datalist>
             </div>
+          </div>
+          <ul class="card-list2">
+            <li class="card-img" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img2" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">ALOK</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img3" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img4" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">TERRA SOLIS</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-item" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="espaçamento-2">
-            <p class="frase-esp2">Encontre seu <br> <span>proximo evento</span> </p>
+        <!-- 2 -->
 
-            <div class="input-container">
-                <div class="search-container">
-                    <img src="./img/search.png" alt="" aria-hidden="true" class="search-icon1" />
+        <div class="text">
+          <div class="seleçao">
+            <p class="musica">Concerto/Música</p>
 
-                    <input type="search" placeholder="Buscar por nome do evento" aria-label="Buscar no site"
-                        class="search-input1" />
-                </div>
+            <div class="setas">
+              <div>
+                <input
+                  type="image"
+                  src="./img/seta left.png"
+                  alt="Enviar"
+                  class="img-arrow"
+                />
 
-                <div class="search-container">
-                    <input list="frutas" placeholder="Selecione a Opção" aria-label="Buscar no site"
-                        class="search-input1" />
+                <input
+                  type="image"
+                  src="./img/seta right.png"
+                  alt="Enviar"
+                  class="img-arrow"
+                />
 
-                    <img src="./img/down.png" class="seta-down">
+                <input
+                  type="image"
+                  src="./img/Botão Ver todos.png"
+                  alt="Enviar"
+                  class="ver-todos"
+                />
+              </div>
 
-                </div>
-
-                <div class="search-container">
-                    <input list="frutas" placeholder="Selecione a Opção" aria-label="Buscar no site"
-                        class="search-input1" />
-
-                    <img src="./img/down.png" class="seta-down">
-
-                    <datalist id="frutas">
-                        <option value="Maçã">
-                        <option value="Banana">
-                        <option value="Laranja">
-                        <option value="Morango">
-                    </datalist>
-                </div>
-
-                <input type="image" src="./img/Icone Procura.png" alt="Enviar" class="img-lupa">
+              <datalist id="frutas">
+                <option value="Maçã"></option>
+                <option value="Banana"></option>
+                <option value="Laranja"></option>
+                <option value="Morango"></option>
+              </datalist>
             </div>
+          </div>
+          <ul class="card-list2">
+            <li class="card-img" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
 
-            <div class="letrero">
-                <img src="./img/festa eletronica.png" alt="img-letrero">
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
 
-                <img src="./img/star.png" alt="img-star" class="star">
-
-                <img src="./img/musica.png" alt="img-letrero">
-
-                <img src="./img/star.png" alt="img-star" class="star">
-
-
-                <img src="./img/festa eletronica.png" alt="img-letrero">
-
-                <img src="./img/star.png" alt="img-star" class="star">
-
-                <img src="./img/musica.png" alt="img-letrero">
-
-                <img src="./img/star.png" alt="img-star" class="star">
-            </div>
-        </div>
-        <main class="categorias">
-            <div class="text">
-                <div class="seleçao">
-                    <p class="musica">Musica eletronica</p>
-
-                    <div class="setas">
-                        <div>
-                            <input type="image" src="./img/seta left.png" alt="Enviar" class="img-arrow">
-
-                            <input type="image" src="./img/seta right.png" alt="Enviar" class="img-arrow">
-
-                            <input type="image" src="./img/Botão Ver todos.png" alt="Enviar" class="ver-todos">
-                        </div>
-
-                        <datalist id="frutas">
-                            <option value="Maçã">
-                            <option value="Banana">
-                            <option value="Laranja">
-                            <option value="Morango">
-                        </datalist>
-                    </div>
-
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
                 </div>
-                <ul class="card-list2">
-                    <li class="card-img" draggable="false">
-                        <a href="#" class="card-link2">
+              </a>
+            </li>
 
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
+            <li class="card-img2" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">ALOK</p>
 
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
 
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img2" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">ALOK</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img3" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img4" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">TERRA SOLIS</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-item" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- 2 -->
-
-            <div class="text">
-                <div class="seleçao">
-                    <p class="musica">Concerto/Música</p>
-
-                    <div class="setas">
-                        <div>
-                            <input type="image" src="./img/seta left.png" alt="Enviar" class="img-arrow">
-
-                            <input type="image" src="./img/seta right.png" alt="Enviar" class="img-arrow">
-
-                            <input type="image" src="./img/Botão Ver todos.png" alt="Enviar" class="ver-todos">
-                        </div>
-
-                        <datalist id="frutas">
-                            <option value="Maçã">
-                            <option value="Banana">
-                            <option value="Laranja">
-                            <option value="Morango">
-                        </datalist>
-                    </div>
-
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
                 </div>
-                <ul class="card-list2">
-                    <li class="card-img" draggable="false">
-                        <a href="#" class="card-link2">
+              </a>
+            </li>
 
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
+            <li class="card-img3" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
 
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
 
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img2" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">ALOK</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img3" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img4" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">TERRA SOLIS</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-item" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- 3 -->
-
-            <div class="text">
-                <div class="seleçao">
-                    <p class="musica">Cinema</p>
-
-                    <div class="setas">
-                        <div>
-                            <input type="image" src="./img/seta left.png" alt="Enviar" class="img-arrow">
-
-                            <input type="image" src="./img/seta right.png" alt="Enviar" class="img-arrow">
-
-                            <input type="image" src="./img/Botão Ver todos.png" alt="Enviar" class="ver-todos">
-                        </div>
-
-                        <datalist id="frutas">
-                            <option value="Maçã">
-                            <option value="Banana">
-                            <option value="Laranja">
-                            <option value="Morango">
-                        </datalist>
-                    </div>
-
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
                 </div>
-                <ul class="card-list2">
-                    <li class="card-img" draggable="false">
-                        <a href="#" class="card-link2">
+              </a>
+            </li>
 
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
+            <li class="card-img4" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">TERRA SOLIS</p>
 
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
 
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img2" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">ALOK</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img3" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img4" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">TERRA SOLIS</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-item" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- 4 -->
-
-            <div class="text">
-                <div class="seleçao">
-                    <p class="musica">Teatro</p>
-
-                    <div class="setas">
-                        <div>
-                            <input type="image" src="./img/seta left.png" alt="Enviar" class="img-arrow">
-
-                            <input type="image" src="./img/seta right.png" alt="Enviar" class="img-arrow">
-
-                            <input type="image" src="./img/Botão Ver todos.png" alt="Enviar" class="ver-todos">
-                        </div>
-
-                        <datalist id="frutas">
-                            <option value="Maçã">
-                            <option value="Banana">
-                            <option value="Laranja">
-                            <option value="Morango">
-                        </datalist>
-                    </div>
-
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
                 </div>
-                <ul class="card-list2">
-                    <li class="card-img" draggable="false">
-                        <a href="#" class="card-link2">
+              </a>
+            </li>
 
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
+            <li class="card-item" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
 
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
 
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img2" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">ALOK</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img3" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img4" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">TERRA SOLIS</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-item" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- 5 -->
-
-            <div class="text">
-                <div class="seleçao">
-                    <p class="musica">Gastronomia</p>
-
-                    <div class="setas">
-                        <div>
-                            <input type="image" src="./img/seta left.png" alt="Enviar" class="img-arrow">
-
-                            <input type="image" src="./img/seta right.png" alt="Enviar" class="img-arrow">
-
-                            <input type="image" src="./img/Botão Ver todos.png" alt="Enviar" class="ver-todos">
-                        </div>
-
-                        <datalist id="frutas">
-                            <option value="Maçã">
-                            <option value="Banana">
-                            <option value="Laranja">
-                            <option value="Morango">
-                        </datalist>
-                    </div>
-
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
                 </div>
-                <ul class="card-list2">
-                    <li class="card-img" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img2" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">ALOK</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img3" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-img4" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">TERRA SOLIS</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="card-item" draggable="false">
-                        <a href="#" class="card-link2">
-
-                            <p class="card-titulo2">FESTA LOREMISUM</p>
-
-                            <h2 class="info-card2">
-                                Parque Lorem - SP, Br <br />
-                                30 de Novembro 2024
-                            </h2>
-                            <div class="botao">
-                                <input type="image" src="./img/info.png" alt="Info">
-
-                                <input type="image" src="./img/tickests.png" alt="tickests">
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </main>
-
-        <div class="espaçamento-3">
-            <p class="p-1">Você esta pronto pra levar o seu</p>
-
-            <p class="p-2">FESTA ELETRONICA</p>
-
-            <P class="p-3">evento para o proximo nivel?</P>
-
-            <input type="image" src="./img/Botão calltoaction.png">
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="espaçamento-4">
-            <div class="informaçao">
-                <p class="p-4">Acompanhe as <br> novidades e promoções</p>
+        <!-- 3 -->
 
-                <p class="p-5">Fique por dentro de tudo que acontece no mundo <br> dos eventos em primeira mão!</p>
+        <div class="text">
+          <div class="seleçao">
+            <p class="musica">Cinema</p>
 
-                <div class="botões">
-                    <input type="image" src="./img/botão newsletter.png">
+            <div class="setas">
+              <div>
+                <input
+                  type="image"
+                  src="./img/seta left.png"
+                  alt="Enviar"
+                  class="img-arrow"
+                />
 
-                    <input type="image" src="./img/botao insta.png">
-                </div>
+                <input
+                  type="image"
+                  src="./img/seta right.png"
+                  alt="Enviar"
+                  class="img-arrow"
+                />
+
+                <input
+                  type="image"
+                  src="./img/Botão Ver todos.png"
+                  alt="Enviar"
+                  class="ver-todos"
+                />
+              </div>
+
+              <datalist id="frutas">
+                <option value="Maçã"></option>
+                <option value="Banana"></option>
+                <option value="Laranja"></option>
+                <option value="Morango"></option>
+              </datalist>
             </div>
+          </div>
+          <ul class="card-list2">
+            <li class="card-img" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
 
-            <img src="./img/Mask group.jpg" alt="img" class="imagem-dissolvida">
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img2" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">ALOK</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img3" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img4" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">TERRA SOLIS</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-item" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <footer>
-            <img src="./img/Footer.png" alt="Footer" class="Footer">
-        </footer>
+        <!-- 4 -->
+
+        <div class="text">
+          <div class="seleçao">
+            <p class="musica">Teatro</p>
+
+            <div class="setas">
+              <div>
+                <input
+                  type="image"
+                  src="./img/seta left.png"
+                  alt="Enviar"
+                  class="img-arrow"
+                />
+
+                <input
+                  type="image"
+                  src="./img/seta right.png"
+                  alt="Enviar"
+                  class="img-arrow"
+                />
+
+                <input
+                  type="image"
+                  src="./img/Botão Ver todos.png"
+                  alt="Enviar"
+                  class="ver-todos"
+                />
+              </div>
+
+              <datalist id="frutas">
+                <option value="Maçã"></option>
+                <option value="Banana"></option>
+                <option value="Laranja"></option>
+                <option value="Morango"></option>
+              </datalist>
+            </div>
+          </div>
+          <ul class="card-list2">
+            <li class="card-img" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img2" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">ALOK</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img3" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img4" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">TERRA SOLIS</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-item" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 5 -->
+
+        <div class="text">
+          <div class="seleçao">
+            <p class="musica">Gastronomia</p>
+
+            <div class="setas">
+              <div>
+                <input
+                  type="image"
+                  src="./img/seta left.png"
+                  alt="Enviar"
+                  class="img-arrow"
+                />
+
+                <input
+                  type="image"
+                  src="./img/seta right.png"
+                  alt="Enviar"
+                  class="img-arrow"
+                />
+
+                <input
+                  type="image"
+                  src="./img/Botão Ver todos.png"
+                  alt="Enviar"
+                  class="ver-todos"
+                />
+              </div>
+
+              <datalist id="frutas">
+                <option value="Maçã"></option>
+                <option value="Banana"></option>
+                <option value="Laranja"></option>
+                <option value="Morango"></option>
+              </datalist>
+            </div>
+          </div>
+          <ul class="card-list2">
+            <li class="card-img" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img2" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">ALOK</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img3" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-img4" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">TERRA SOLIS</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+
+            <li class="card-item" draggable="false">
+              <a href="#" class="card-link2">
+                <p class="card-titulo2">FESTA LOREMISUM</p>
+
+                <h2 class="info-card2">
+                  Parque Lorem - SP, Br <br />
+                  30 de Novembro 2024
+                </h2>
+                <div class="botao">
+                  <input type="image" src="./img/info.png" alt="Info" />
+
+                  <input type="image" src="./img/tickests.png" alt="tickests" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+
+      <div class="espaçamento-3">
+        <p class="p-1">Você esta pronto pra levar o seu</p>
+
+        <p class="p-2">FESTA ELETRONICA</p>
+
+        <p class="p-3">evento para o proximo nivel?</p>
+
+        <input type="image" src="./img/Botão calltoaction.png" />
+      </div>
+
+      <div class="espaçamento-4">
+        <div class="informaçao">
+          <p class="p-4">
+            Acompanhe as <br />
+            novidades e promoções
+          </p>
+
+          <p class="p-5">
+            Fique por dentro de tudo que acontece no mundo <br />
+            dos eventos em primeira mão!
+          </p>
+
+          <div class="botões">
+            <input type="image" src="./img/botão newsletter.png" />
+
+            <input type="image" src="./img/botao insta.png" />
+          </div>
+        </div>
+        <div>
+          <img src="./img/back trans.png" alt="img" class="imagem-dissolvida" />
+        </div>
+      </div>
+
+      <footer>
+        <img src="./img/Footer.png" alt="Footer" class="Footer" />
+      </footer>
     </div>
-
-
-</body>
-
+  </body>
 </html>
