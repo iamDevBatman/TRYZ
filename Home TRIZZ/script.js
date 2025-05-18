@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const initDraggableCarousel = (selector) => {
     const carrossel = document.querySelector(selector);
     if (!carrossel) return;
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     carrossel.addEventListener("touchmove", dragging, { passive: false });
     carrossel.addEventListener("touchend", dragStop);
 
-    carrossel.addEventListener('dragover', (e) => e.preventDefault());
+    carrossel.addEventListener("dragover", (e) => e.preventDefault());
   };
 
   initDraggableCarousel(".card-list");
@@ -46,8 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initDraggableCarousel(".card-list5");
 });
 
-
-const spotlight = document.querySelector('.spotlight');
+const spotlight = document.querySelector(".spotlight");
 
 let posX = 50;
 let posY = 50;
@@ -74,16 +73,31 @@ function animateSpotlight() {
 
 animateSpotlight();
 
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const nav = document.getElementById("main-nav");
+const overlay = document.getElementById("overlay-menu");
 
-document.querySelectorAll('.dropdown-toggle').forEach(button => {
-  button.addEventListener('click', (e) => {
-    e.stopPropagation();
-
-    document.querySelectorAll('.dropdown').forEach(drop => drop.classList.remove('active'));
-    button.parentElement.classList.toggle('active');
-  });
+hamburgerBtn.addEventListener("click", function () {
+  nav.classList.toggle("open");
+  overlay.classList.toggle("active");
+  // Bloqueia scroll do body quando menu aberto
+  document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
 });
 
-document.addEventListener('click', () => {
-  document.querySelectorAll('.dropdown').forEach(drop => drop.classList.remove('active'));
+// Fecha menu clicando fora
+overlay.addEventListener("click", function () {
+  nav.classList.remove("open");
+  overlay.classList.remove("active");
+  document.body.style.overflow = "";
+});
+
+// Dropdown em mobile
+document.querySelectorAll(".dropdown-toggle").forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      let li = btn.closest(".dropdown");
+      li.classList.toggle("open");
+    }
+  });
 });

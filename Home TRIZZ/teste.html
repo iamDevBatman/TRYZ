@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,12 +16,7 @@
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="./bootstrap.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css"
-    />
-
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./teste.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -35,111 +27,84 @@
   </head>
 
   <body>
-    <header class="site-header container-fluid">
-      <div
-        class="header-container d-flex justify-content-between align-items-center flex-wrap px-3"
-      >
+    <header class="site-header">
+      <div class="header-container">
         <!-- LOGO -->
-        <a href="/" class="logo mr-auto">
+        <a href="/" class="logo">
           <img src="./img/Logo TRYZ.png" alt="Nome da Empresa" />
         </a>
-
         <!-- BUSCA -->
-        <form
-          action="/busca"
-          method="get"
-          role="search"
-          class="search-container mx-3"
-        >
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text bg-transparent border-0">
-                <img src="./img/search.png" class="search-icon" />
-              </span>
-            </div>
+        <form class="search-form">
+          <div class="search-container">
+            <img src="./img/search.png" alt="" class="search-icon" />
             <input
               type="search"
-              placeholder="Search for categories,tags..."
-              aria-label="Buscar no site"
-              class="search-input form-control bg-transparent border-0"
+              placeholder="Search for categories, tags..."
+              class="search-input"
             />
           </div>
         </form>
-
+        <!-- HAMBURGER (só aparece no mobile) -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <!-- NAV -->
-        <nav aria-label="Navegação principal" class="nav ml-auto">
-          <ul class="menu nav d-flex flex-wrap align-items-center">
-            <li class="nav-item">
-              <a href="/" class="nav-link d-flex align-items-center">
-                Adicionar meu evento
-                <img src="./img/Group.png" class="menu-icon ml-1" />
-              </a>
+        <nav class="nav" id="main-nav">
+          <ul class="menu">
+            <li>
+              <a href="/"
+                >Adicionar meu evento
+                <img src="./img/Group.png" class="menu-icon"
+              /></a>
             </li>
-            <li class="nav-item">
-              <a href="/sobre" class="nav-link d-flex align-items-center">
-                Meus ingressos
-                <img src="./img/Group 13991.png" class="menu-icon ml-1" />
-              </a>
+            <li>
+              <a href="/sobre"
+                >Meus ingressos
+                <img src="./img/Group 13991.png" class="menu-icon"
+              /></a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle d-flex align-items-center"
-                data-toggle="dropdown"
-              >
-                Sobre a TRYZ
-                <img src="./img/down.png" class="down ml-1" />
-              </a>
+            <li class="dropdown">
+              <button class="dropdown-toggle">
+                Sobre a TRYZ <img src="./img/down.png" class="down" />
+              </button>
               <div class="dropdown-menu">
-                <a href="/sobre" class="dropdown-item">A TRYZ</a>
-                <a href="/funciona" class="dropdown-item">Como Funciona</a>
-                <a href="/contato" class="dropdown-item">Contate-nos</a>
+                <a href="/sobre">A TRYZ</a>
+                <a href="/funciona">Como Funciona</a>
+                <a href="/contato">Contate-nos</a>
               </div>
             </li>
-            <!-- Bússola -->
-            <li class="nav-item">
-              <a href="#" class="nav-link p-0">
-                <img src="./img/vector2.png" alt="bússola" />
-              </a>
+            <li>
+              <a href="#" class="icon-btn"
+                ><img src="./img/vector2.png" alt="bussula"
+              /></a>
             </li>
-            <!-- Usuário -->
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle d-flex align-items-center p-0"
-                data-toggle="dropdown"
-              >
+            <li class="dropdown">
+              <button class="dropdown-toggle">
                 <img src="./img/users.png" alt="user" />
                 <img src="./img/down.png" alt="" />
-              </a>
-              <div class="dropdown-menu p-3 t-2">
-                <button class="btn login btn-block mb-2">Login</button>
-                <button class="btn purple btn-block mb-2">Criar evento</button>
-                <button class="btn cyan btn-block">Cadastre-se</button>
+              </button>
+              <div class="dropdown-menu t-2">
+                <button class="btn login">Login</button>
+                <button class="btn purple">Criar evento</button>
+                <button class="btn cyan">Cadastre-se</button>
               </div>
             </li>
-            <!-- Idioma -->
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle d-flex align-items-center p-0"
-                data-toggle="dropdown"
-              >
+            <li class="dropdown">
+              <button class="dropdown-toggle">
                 <img src="./img/Vector3.png" alt="nacionalidade" />
                 <img src="./img/down.png" alt="" />
-              </a>
-              <div class="dropdown-menu p-3 t-3">
-                <button class="btn flag btn-block mb-2">
-                  <img src="./img/brasil.png" class="mr-1" alt="Português" />
-                  PT
+              </button>
+              <div class="dropdown-menu t-3">
+                <button class="btn flag">
+                  <img src="./img/brasil.png" alt="Português" /> PT
                 </button>
-                <button class="btn flag btn-block mb-2">
-                  <img src="./img/espanha.png" class="mr-1" alt="Espanhol" />
-                  ES
+                <button class="btn flag">
+                  <img src="./img/espanha.png" alt="Espanhol" /> ES
                 </button>
-                <button class="btn flag btn-block">
-                  <img src="./img/estates.png" class="mr-1" alt="Inglês" />
-                  EN
+                <button class="btn flag">
+                  <img src="./img/estates.png" alt="Inglês" /> EN
                 </button>
               </div>
             </li>
@@ -1074,8 +1039,6 @@
       </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <div id="overlay-menu"></div>
   </body>
 </html>
