@@ -73,31 +73,67 @@ function animateSpotlight() {
 
 animateSpotlight();
 
-const hamburgerBtn = document.getElementById("hamburger-btn");
-const nav = document.getElementById("main-nav");
-const overlay = document.getElementById("overlay-menu");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const body = document.body;
+  const dropdownToggles = document.querySelectorAll(".dropdown > a");
 
-hamburgerBtn.addEventListener("click", function () {
-  nav.classList.toggle("open");
-  overlay.classList.toggle("active");
-  // Bloqueia scroll do body quando menu aberto
-  document.body.style.overflow = nav.classList.contains("open") ? "hidden" : "";
-});
+  menuToggle.addEventListener("click", function (e) {
+    e.stopPropagation();
+    body.classList.toggle("menu-open");
+    menuToggle.textContent = body.classList.contains("menu-open") ? "✕" : "☰";
+  });
 
-// Fecha menu clicando fora
-overlay.addEventListener("click", function () {
-  nav.classList.remove("open");
-  overlay.classList.remove("active");
-  document.body.style.overflow = "";
-});
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("mouseenter", function () {
+      if (window.innerWidth > 992) {
+        this.parentElement.classList.add("active");
+      }
+    });
 
-// Dropdown em mobile
-document.querySelectorAll(".dropdown-toggle").forEach((btn) => {
-  btn.addEventListener("click", function (e) {
-    if (window.innerWidth <= 768) {
-      e.preventDefault();
-      let li = btn.closest(".dropdown");
-      li.classList.toggle("open");
+    toggle.parentElement.addEventListener("mouseleave", function () {
+      if (window.innerWidth > 992) {
+        this.classList.remove("active");
+      }
+    });
+
+    toggle.addEventListener("click", function (e) {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        const parentLi = this.parentElement;
+        const wasActive = parentLi.classList.contains("active");
+
+        document.querySelectorAll(".dropdown").forEach((dropdown) => {
+          dropdown.classList.remove("active");
+        });
+
+        if (!wasActive) {
+          parentLi.classList.add("active");
+        }
+      }
+    });
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".site-header")) {
+      body.classList.remove("menu-open");
+      menuToggle.textContent = "☰";
+
+      if (window.innerWidth <= 992) {
+        document.querySelectorAll(".dropdown").forEach((dropdown) => {
+          dropdown.classList.remove("active");
+        });
+      }
+    }
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 992) {
+      body.classList.remove("menu-open");
+      menuToggle.textContent = "☰";
+      document.querySelectorAll(".dropdown").forEach((dropdown) => {
+        dropdown.classList.remove("active");
+      });
     }
   });
 });
