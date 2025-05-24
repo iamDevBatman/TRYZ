@@ -1,0 +1,308 @@
+/* HEADER */
+
+.site-header {
+    width: 100%;
+    height: 94px;
+    background: #000;
+    top: 0;
+    border-bottom: 1px solid #333;
+}
+
+.container-fluid {
+    padding-top: 20px !important;
+}
+
+.header-container {
+    height: 80px;
+    padding: 0 20px;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 45px;
+}
+
+.logo img {
+    height: 48px;
+    width: auto;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15px;
+    transition: transform 0.3s;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+.search-container {
+    max-width: 400px;
+    background: black;
+    border: 0.5px solid rgb(87, 87, 87);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 15px;
+    transition: all 0.3s;
+}
+
+.search-container:focus-within {
+    border-color: #fff;
+}
+
+.search-input {
+    width: 230px;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.menu>li {
+    position: relative;
+}
+
+.info {
+    color: gray;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.info:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.menu-icon {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 3px;
+}
+
+.menu-icon1 {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.navbar .nav-item.dropdown>.nav-link:after {
+    display: none !important;
+}
+
+.navbar .dropdown-toggle:after {
+    display: none !important;
+}
+
+.navbar-nav {
+    align-items: center;
+    flex-direction: row !important;
+}
+
+.nav1 {
+    height: 35px !important;
+    max-height: 35px;
+    margin-bottom: 15px;
+}
+
+.nav2 {
+    height: 59px !important;
+    max-height: 59px;
+}
+
+.seta-right {
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+
+.ul-links {
+    margin-right: 20px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    background: #0a0a0a;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1002;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a,
+.dropdown-menu .btn {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    margin: 4px 0;
+    text-align: left;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu .btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu.t-3 {
+    width: 200px;
+    right: 0;
+}
+
+.btn.flag {
+    font-size: 14px;
+}
+
+.btn.flag img {
+    margin-right: 8px;
+    width: 20px;
+    height: auto;
+}
+
+.btn.purple {
+    background: #6a0dad;
+    color: white;
+}
+
+.btn.cyan {
+    background: #00bcd4;
+    color: white;
+}
+
+.btn.login {
+    border: 1px solid #fff;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+.main-content-section {
+    background-image: url('./img/background-alok.png');
+    background-size: cover;
+    background-position: center;
+    height: 806px;
+}
+
+.navigation-top {
+    background-color: rgba(31, 27, 38, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-link {
+    color: white;
+    margin-right: 25px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.icon-link {
+    color: rgba(127, 53, 255, 1);
+    margin-left: 150px;
+    padding-top: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.bussula {
+    margin-right: 8px;
+}
+
+.icon-label {
+    font-size: 0.9rem;
+}
+
+.content-area {
+    padding: 40px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.section-title p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.section-subtitle {
+    margin-top: 20px;
+}
+
+.section-subtitle h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.section-subtitle p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+}
