@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const initDraggableCarousel = (selector) => {
     const carrossel = document.querySelector(selector);
     if (!carrossel) return;
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     carrossel.addEventListener("touchmove", dragging, { passive: false });
     carrossel.addEventListener("touchend", dragStop);
 
-    carrossel.addEventListener('dragover', (e) => e.preventDefault());
+    carrossel.addEventListener("dragover", (e) => e.preventDefault());
   };
 
   initDraggableCarousel(".card-list");
@@ -46,8 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initDraggableCarousel(".card-list5");
 });
 
-
-const spotlight = document.querySelector('.spotlight');
+const spotlight = document.querySelector(".spotlight");
 
 let posX = 50;
 let posY = 50;
@@ -74,16 +73,67 @@ function animateSpotlight() {
 
 animateSpotlight();
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const body = document.body;
+  const dropdownToggles = document.querySelectorAll(".dropdown > a");
 
-document.querySelectorAll('.dropdown-toggle').forEach(button => {
-  button.addEventListener('click', (e) => {
+  menuToggle.addEventListener("click", function (e) {
     e.stopPropagation();
-
-    document.querySelectorAll('.dropdown').forEach(drop => drop.classList.remove('active'));
-    button.parentElement.classList.toggle('active');
+    body.classList.toggle("menu-open");
+    menuToggle.textContent = body.classList.contains("menu-open") ? "✕" : "☰";
   });
-});
 
-document.addEventListener('click', () => {
-  document.querySelectorAll('.dropdown').forEach(drop => drop.classList.remove('active'));
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("mouseenter", function () {
+      if (window.innerWidth > 992) {
+        this.parentElement.classList.add("active");
+      }
+    });
+
+    toggle.parentElement.addEventListener("mouseleave", function () {
+      if (window.innerWidth > 992) {
+        this.classList.remove("active");
+      }
+    });
+
+    toggle.addEventListener("click", function (e) {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        const parentLi = this.parentElement;
+        const wasActive = parentLi.classList.contains("active");
+
+        document.querySelectorAll(".dropdown").forEach((dropdown) => {
+          dropdown.classList.remove("active");
+        });
+
+        if (!wasActive) {
+          parentLi.classList.add("active");
+        }
+      }
+    });
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".site-header")) {
+      body.classList.remove("menu-open");
+      menuToggle.textContent = "☰";
+
+      if (window.innerWidth <= 992) {
+        document.querySelectorAll(".dropdown").forEach((dropdown) => {
+          dropdown.classList.remove("active");
+        });
+      }
+    }
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 992) {
+      body.classList.remove("menu-open");
+      menuToggle.textContent = "☰";
+      document.querySelectorAll(".dropdown").forEach((dropdown) => {
+        dropdown.classList.remove("active");
+      });
+    }
+  });
 });
