@@ -3,8 +3,10 @@ body {
 }
 
 .site-header {
+  position: fixed;
   width: 100%;
   height: 94px;
+  z-index: 1000;
   background: #000;
   top: 0;
   border-bottom: 1px solid #333;
@@ -27,8 +29,7 @@ body {
 }
 
 .conteudo-hamburguer {
-  display: flex;
-  align-items: start;
+  align-items: start !important;
   list-style: none;
 }
 
@@ -105,7 +106,7 @@ body {
   text-decoration: none;
   padding: 8px 12px;
   transition: all 0.3s;
-  border-radius: 4px;
+  border-radius: 18px;
 }
 
 .info:hover {
@@ -217,6 +218,7 @@ body {
 }
 
 .btn.purple {
+  border-radius: 18px;
   background: #6a0dad;
   color: white;
 }
@@ -226,12 +228,20 @@ body {
 }
 
 .btn.cyan {
+  border-radius: 18px;
   background: #00bcd4;
   color: white;
 }
 
 .btn.login {
+  border-radius: 18px;
   border: 1px solid #fff;
+}
+
+@media (max-width: 1096px){
+  .search-container {
+    display: none;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -247,14 +257,30 @@ body {
   .nav-item {
     margin-bottom: 10px;
   }
+
 }
 
 @media (max-width: 836px) {
   .navbar-nav {
     display: flex;
-    flex-direction: column !important;
     justify-content: center;
     align-items: start;
+  }
+
+  .navbar-collapse {
+    position: absolute !important;
+    display: flex;
+    align-items: end;
+    padding: 15px;
+    padding-left: 150px;
+    margin-top: 310px;
+    margin-left: 420px;
+    max-width: 350px;
+  }
+
+  .conteudo-hamburguer {
+    flex-direction: column !important;
+    align-items: end !important;
   }
 }
 
@@ -275,6 +301,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 806px;
+  padding-top: 88px;
 }
 
 .navigation-top {
@@ -295,7 +322,7 @@ body {
 
 .nav-link {
   color: white;
-  margin-right: 25px;
+  margin-right: 13px;
   font-size: 0.9rem;
   text-decoration: none;
 }
@@ -438,6 +465,7 @@ h3 {
 }
 
 .form-control {
+  color: #fff;
   background-color: #121212 !important;
   border-radius: 20px !important;
   margin-top: 15px !important;
@@ -468,7 +496,7 @@ h3 {
   border: 1px solid rgba(31, 27, 38, 1);
   border-radius: 0;
   background-color: rgba(11, 9, 13, 1);
-  color: white;
+  /* color: white; */
 }
 
 .card.box h2,
@@ -509,7 +537,7 @@ h3 {
 
 .carousel-container {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden; 
   padding-right: 50px;
   z-index: 1;
 }
@@ -534,7 +562,8 @@ h3 {
   overflow-x: auto;
   scroll-behavior: smooth;
   padding-bottom: 10px;
-  margin-right: -50px;
+  margin-right: -40px;
+  margin-left: 20px;
 }
 
 .carousel-item {
@@ -558,14 +587,25 @@ h3 {
 .carousel-arrow {
   position: absolute;
   top: 50%;
-  right: 5px;
+  right: 0;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4);
+  background: transparent;
   border: none;
+  outline: none;
   cursor: pointer;
-  padding: 6px;
-  border-radius: 50%;
+  padding: 0 10px;
   z-index: 10;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+
+.carousel-arrow:focus,
+.carousel-arrow:active {
+  outline: none;
+  box-shadow: none;
 }
 
 .carousel-track.dragging {
@@ -662,7 +702,7 @@ h3 {
 
 .footer-copy {
   color: #bbbbbb;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 0.01em;
   display: block;
   margin-top: 16px;
@@ -694,11 +734,11 @@ h3 {
 
 @media (max-width: 991.98px) {
   .footer-top-row {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
   .footer-middle-row {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
   .footer-card-atendimento {
