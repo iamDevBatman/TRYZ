@@ -1,0 +1,166 @@
+<header class="site-header">
+  <div data-page="pagina" class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <!-- Logo -->
+      <a href="/" class="navbar-brand logo">
+        <img src="./img/Logo TRYZ.png" alt="TRYZ Logo" />
+      </a>
+
+      <!-- Botão Hamburguer para mobile -->
+      <button
+        class="Hamburguer navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
+
+      <!-- Conteúdo do Navbar -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="conteudo-hamburguer navbar-nav ml-auto">
+          <li class="nav-item d-none d-lg-block mr-3">
+            <form class="search-container">
+              <img
+                src="./img/search.png"
+                alt=""
+                aria-hidden="true"
+                class="search-icon1"
+              />
+              <input
+                type="search"
+                placeholder="Search for categories,tags..."
+                class="search-input"
+              />
+            </form>
+          </li>
+
+          <li class="nav-item d-flex flex-nowrap">
+            <a href="/" class="info">
+              Adicionar meu evento
+              <img src="./img/Group.png" class="menu-icon" />
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/" class="info">
+              Meus ingressos
+              <img src="./img/Group 13991.png" class="menu-icon" />
+            </a>
+          </li>
+
+          <!-- (dropdown) -->
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="info dropdown-toggle"
+              id="aboutDropdown"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Sobre a TRYZ
+              <img src="./img/down.png" class="menu-icon" />
+            </a>
+            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <a href="/sobre" class="dropdown-item">A TRYZ</a>
+              <a href="/funciona" class="dropdown-item">Como Funciona</a>
+              <a href="/contato" class="dropdown-item">Contate-nos</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="info">
+              <img
+                src="./img/vector2.png"
+                alt="bússola"
+                class="menu-icon menu-icon1"
+              />
+            </a>
+          </li>
+
+          <!-- (dropdown) -->
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="info dropdown-toggle"
+              id="userDropdown"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img
+                src="./img/users.png"
+                alt="user"
+                class="menu-icon menu-icon1"
+              />
+              <img src="./img/down.png" alt="" />
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right t-2"
+              aria-labelledby="userDropdown"
+            >
+              <button class="btn login btn-block mb-2">Login</button>
+              <button class="btn purple btn-block mb-2">Criar evento</button>
+              <button class="btn cyan btn-block">Cadastre-se</button>
+            </div>
+          </li>
+
+          <!-- (dropdown) -->
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              id="languageDropdown"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img
+                src="./img/Vector3.png"
+                alt="nacionalidade"
+                class="menu-icon menu-icon1"
+              />
+              <img src="./img/down.png" alt="" />
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right t-3"
+              aria-labelledby="languageDropdown"
+            >
+              <button class="btn flag btn-block mb-2">
+                <img src="./img/brasil.png" class="mr-1" alt="Português" />
+                PT
+              </button>
+              <button class="btn flag btn-block mb-2">
+                <img src="./img/espanha.png" class="mr-1" alt="Espanhol" />
+                ES
+              </button>
+              <button class="btn flag btn-block">
+                <img src="./img/estates.png" class="mr-1" alt="Inglês" />
+                EN
+              </button>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Barra de pesquisa - visível apenas em mobile -->
+        <!-- <form class="search-container d-lg-none w-100 mt-2">
+              <img
+                src="./img/search.png"
+                alt=""
+                aria-hidden="true"
+                class="search-icon1"
+              />
+              <input
+                type="search"
+                placeholder="Search for categories,tags..."
+                class="search-input"
+              />
+            </form> -->
+      </div>
+    </nav>
+  </div>
+</header>

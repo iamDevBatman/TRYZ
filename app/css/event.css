@@ -28,11 +28,6 @@ body {
   color: #fff !important;
 }
 
-.conteudo-hamburguer {
-  align-items: start !important;
-  list-style: none;
-}
-
 .logo {
   height: 45px;
 }
@@ -99,14 +94,18 @@ body {
 }
 
 .info {
+  display: flex !important;
+  flex-direction: row;
   color: gray;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
-  padding: 8px 12px;
+  padding-right: 12px;
   transition: all 0.3s;
   border-radius: 18px;
+  display: inline-block;
+  max-width: 150px;
 }
 
 .info:hover {
@@ -238,7 +237,7 @@ body {
   border: 1px solid #fff;
 }
 
-@media (max-width: 1096px){
+@media (max-width: 1096px) {
   .search-container {
     display: none;
   }
@@ -255,9 +254,15 @@ body {
   }
 
   .nav-item {
+    display: inline-block;
+    max-width: 150px;
     margin-bottom: 10px;
   }
 
+  .conteudo-hamburguer {
+    align-items: start !important;
+    list-style: none;
+  }
 }
 
 @media (max-width: 836px) {
@@ -297,7 +302,7 @@ body {
 }
 
 .main-content-section {
-  background-image: url("./img/alok-background.png");
+  background-image: url("../img/alok-background.png");
   background-size: cover;
   background-position: center;
   height: 806px;
@@ -537,7 +542,7 @@ h3 {
 
 .carousel-container {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   padding-right: 50px;
   z-index: 1;
 }
