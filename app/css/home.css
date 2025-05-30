@@ -125,12 +125,17 @@ body {
 
 .info:hover {
   color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav .nav-item a {
+  white-space: nowrap;
+  margin-right: 15px;
 }
 
 .menu-icon {
   width: 16px;
   height: 16px;
+  margin-left: 5px;
   margin-bottom: 3px;
 }
 
@@ -148,6 +153,7 @@ body {
 }
 
 .navbar-nav {
+  gap: 15px;
   align-items: center;
   flex-direction: row !important;
 }
@@ -406,6 +412,7 @@ body.menu-open {
   margin-top: 70px;
   width: 100%;
   max-width: 1337px;
+  max-height: 470px;
   overflow: hidden;
   position: relative;
 }
