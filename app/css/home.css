@@ -10,7 +10,7 @@ body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
   position: relative;
-  max-width: 1310px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -73,8 +73,12 @@ body {
   transform: scale(1.1);
 }
 
+.eventB {
+  width: 300px;
+}
+
 .search-container {
-  max-width: 400px;
+  max-width: 300px;
   background: black;
   border: 0.5px solid rgb(87, 87, 87);
   border-radius: 20px;
@@ -116,11 +120,10 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
-  padding-right: 12px;
   transition: all 0.3s;
   border-radius: 18px;
   display: inline-block;
-  max-width: 150px;
+  /* max-width: 150px; */
 }
 
 .info:hover {
@@ -129,7 +132,7 @@ body {
 
 .navbar-nav .nav-item a {
   white-space: nowrap;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .menu-icon {
@@ -153,7 +156,7 @@ body {
 }
 
 .navbar-nav {
-  gap: 15px;
+  gap: 12px;
   align-items: center;
   flex-direction: row !important;
 }
@@ -409,7 +412,6 @@ body.menu-open {
 }
 
 .card-P {
-  margin-top: 70px;
   width: 100%;
   max-width: 1337px;
   max-height: 470px;
@@ -657,7 +659,6 @@ body.menu-open {
 .search-input1 {
   position: relative;
   z-index: 2;
-  width: 155px;
   flex: 1;
   margin-left: 15px;
   border: none;
@@ -868,7 +869,6 @@ body.menu-open {
 }
 
 .espaçamento-4 {
-  position: relative;
   display: flex;
   align-items: center;
   height: 776px;
@@ -890,6 +890,8 @@ body.menu-open {
 }
 
 .p-4 {
+  margin: 0 !important;
+  padding: 0 !important;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: clamp(32px, 5vw, 48px);
@@ -899,6 +901,8 @@ body.menu-open {
 }
 
 .p-5 {
+  margin: 0 !important;
+  padding: 0 !important;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: clamp(16px, 2.5vw, 20px);

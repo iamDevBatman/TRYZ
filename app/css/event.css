@@ -133,7 +133,9 @@ body {
 }
 
 .navbar-nav {
+  white-space: nowrap;
   align-items: center;
+  margin-right: 15px;
   flex-direction: row !important;
 }
 
